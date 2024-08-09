@@ -77,7 +77,7 @@ class SpotifyScraper:
                     "div[data-testid='rating-and-topics'] button:first-child"
                 )
                 data = {
-                    "podcast_title": page.query_selector(
+                    "title": page.query_selector(
                         "h1[data-testid='showTitle']"
                     ).inner_text(),
                     "overall_rating": ratings_wrapper.query_selector(
@@ -97,7 +97,3 @@ class SpotifyScraper:
             browser.close()
 
         return data
-
-
-if __name__ == "__main__":
-    print(SpotifyScraper.get_podcast("4rOoJ6Egrf8K2IrywzwOMk"))
