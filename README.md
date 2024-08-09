@@ -7,7 +7,7 @@ The project aims to extract, transform and load data from the Spotify website.
 
 To install the Spotify scraper, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/cyber237/spotify-scraper.git`
+1. Clone the repository: `git clone https://github.com/cyber237/spotify_scraper.git`
 2. Install the required dependencies: `poetry install -no-root`
 3. Install browser for playright: `playwright install chromium`
 
